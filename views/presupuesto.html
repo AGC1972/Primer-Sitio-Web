@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Declaracion de fichero de estilos-->  
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <title>Presupuesto</title>
+  </head>
+
+  <body class="body-Presupuesto">
+
+    <!--Declaración de la cabecera de la página-->
+    <header id="div_header">
+       <div class="cabeceraNombreEmpresa">  
+        <div>
+            <img src="../assets/images/ordenador_5.webp" alt="ordenador-4" class="img-Cabecera">
+        </div>
+        <h1>
+            Informática práctica - su tienda de libros de segunda mano
+        </h1>
+       </div>
+       <!--Hacemos un espaciado-->
+       <div class="spacer"> </div>
+       
+       <nav class="navbar">
+         <!--Div que contiene el menu--> 
+         <div class="div_menu">
+            <span class="boton">
+                <a href="../index.html" class="div_menu"> Inicio </a>
+            </span>
+            <span class="boton">
+                <a href="productos.html" class="div_menu"> Productos </a>
+            </span>
+            <span class="boton-seleccionado">
+                <a href="#" class="div_menu"> Presupuesto</a>
+            </span>
+            <span class="boton">
+                <a href="contacto.html" class="div_menu"> Contacto</a>
+            </span>
+          </div>
+        </nav>
+    </header>
+
+    <!--Cuerpo principal de la página-->
+    <main class="main-Presupuesto">
+
+       <!--Zona izquierda de la página--> 
+       <aside class="aside-Presupuesto" >
+         <h3 style="color:green"> 
+           ¡Solicite su libro o pídanos información!  
+         </h3>
+         <img src="../assets/images/lectora.jpg" alt="lectora" class="img-lectora" style="margin-left: 15px;">
+       </aside>
+
+       <!--Zona central de la página-->
+       <div class="formulario-container">
+         <h2 style="text-decoration: underline;color: blue;">
+           Solicítenos su libro
+         </h2>
+         
+         <!--Incluimos un formulario-->
+         <form id="formulario-web"  class="formulario">
+            <label for="nombre">Nombre</label>
+            <input   type="text"  id="nombre"  name="nombre" placeholder="Tu nombre" class="form-item-tamaño"
+                  required>
+
+            <label for="correo">Correo</label> 
+            <input  type="email" id="correo" name="correo"  placeholder="tu@email.com" class="form-item-tamaño"
+                  required >
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel"  id="telefono"  name="telefono"  placeholder="123 456 789" class="form-item-tamaño"
+                  required >
+
+            <label for="solicita">Solicite más información</label>
+            <textarea id="solicita"  name="solicita"   placeholder=""  
+                rows="5" class="form-item-tamaño"></textarea>
+
+            <label for= "marcar">Acepte nuestra política de privacidad marcando la siguiente casilla</label>
+
+            <input type="checkbox" name=”casilla” value= 'Acepte nuestra política de privacidad' required>
+
+            <button class="button" type="submit">Enviar</button>              
+         </form>
+        </div>
+
+        <!--Zona derecha de la página-->
+       <aside class="aside-Presupuesto" >
+          <h3 style="color:green"> 
+           ¡En próximas semanas sortearemos el siguiente equipo! En pocos días publicaremos las bases del sorteo.
+         </h3>
+          <img src="../assets/images/ordenador_2.webp" alt="ordenador2" class="img-ordenador2">
+       </aside>
+    </main>
+
+    <!--Pie de página-->
+    <footer class="footer-style">
+        <p> Informática práctica, S.L. dirección: c/ Alcalá 619 (28022)- Madrid - todos los derechos reservados</p>
+        <a href="https://www.linkedin.com"> www.linkedin.com</a>
+        <a href="https://es-es.facebook.com/">www.facebook.com</a>
+     
+    </footer>
+
+ </body>
+
+</html>
+        
